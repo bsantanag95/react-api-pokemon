@@ -1,0 +1,25 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    min-height: 100vh;
+}
+.buttons-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container{
+    width: 250px;
+    height: 300px;
+    margin-top: 80px;
+    position: relative;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.search-container{
+    width: 250px;
+    margin-top: 20px; /* Ajusta este valor según necesites */
+}

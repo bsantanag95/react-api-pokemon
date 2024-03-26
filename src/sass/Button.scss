@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+.button{
+    background-color: v.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+    &__box{
+        position: relative;
+    }
+    &__shiny{
+        background-color: v.$color4; // Color de fondo del nuevo botón
+        width: auto; // Ancho automático basado en el contenido
+        height: auto; // Alto automático basado en el contenido
+        border-radius: 8px; // Bordes redondeados
+        padding: 8px 16px; // Espaciado interno para el texto
+        cursor: pointer;
+        color: white;
+        font-size: 16px; // Tamaño de fuente adecuado
+        border: none;
+        display: inline-block; // Mostrar como elemento en línea para ajustar al contenido
+        position: relative;
+    }
+    &__shadow{
+        width: 60px;
+        height: 60px;
+        background-color: v.$color2;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        z-index: -1;
+    }
+    &:active{
+        transform: translateY(4px);
+    }
+}
